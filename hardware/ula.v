@@ -30,5 +30,6 @@ case (op)
 endcase
 
     zeroFlag = (result == 32'd0);
+end
 
 endmodule

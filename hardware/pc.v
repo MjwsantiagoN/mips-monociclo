@@ -1,4 +1,4 @@
-module PC (
+module pc (
     input clock,
     input [31:0] nextPC,
     output reg [31:0] PC
