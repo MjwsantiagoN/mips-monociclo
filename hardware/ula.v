@@ -26,6 +26,11 @@ case (op)
     4'b1001: result = in2 >> in1[4:0];           // Deslocamento para a direita (srl/srlv)
     4'b1010: result = $signed(in2) >>> in1[4:0]; // Deslocamento p/ direita com sinal (sra/srav)
 
+<<<<<<< HEAD
+=======
+    4'b1011: result = {in2[15:0], 16'b0};        // LUI: carrega imediato nos 16 bits superiores
+
+>>>>>>> feat/complete-mips-implementation
     default: result = 32'b0;
 endcase
 
