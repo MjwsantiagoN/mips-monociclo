@@ -1,3 +1,19 @@
+// ============================================================
+// Grupo: Marcos José e Josué Costa
+// Atividade: Projeto 02 - 2VA
+// Disciplina: Arquitetura e Organização de Computadores
+// Semestre: 2025.2
+// Arquivo: tb_ula.v
+// Descrição: Testbench da Unidade Lógica e Aritmética (ULA).
+//            Verifica as operações aritméticas, lógicas,
+//            comparações, deslocamentos e a geração do
+//            sinal zeroFlag.
+//
+//  Compilação:
+//    cd hardware/
+//    iverilog -g2012 -o sim *.v ../tests/tb_ula.v && vvp sim
+// ============================================================
+
 module tb_ula;
 
     reg [31:0] in1;
@@ -99,11 +115,7 @@ module tb_ula;
 
         #10;
 
-<<<<<<< HEAD
-        $stop;
-=======
         $finish;
->>>>>>> feat/complete-mips-implementation
 
     end
 
