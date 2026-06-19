@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# mips-monociclo
-=======
 # MIPS Monociclo – Projeto 02
 
 **Disciplina:** Arquitetura e Organização de Computadores  
