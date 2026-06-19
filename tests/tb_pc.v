@@ -1,30 +1,5 @@
-<<<<<<< HEAD
-module tb_pc;
-
-reg clock;
-reg [31:0] nextPC;
-
-wire [31:0] PC;
-
-pc uut (
-
-    .clock(clock),
-    .nextPC(nextPC),
-    .PC(PC)
-);
-
-initial begin
-
-    clock = 0;
-    nextPC = 0;
-    #10 nextPC = 4;
-    #10 nextPC = 8;
-    #10 nextPC = 12;
-	 #10 $stop;
-
-=======
 // ============================================================
-// Grupo: --
+// Grupo: Marcos José e Josué Costa
 // Atividade: Projeto 02 - 2VA
 // Disciplina: Arquitetura e Organização de Computadores
 // Semestre: 2025.2
@@ -68,13 +43,9 @@ initial begin
     #10; $display("reset=1:   PC=0x%08h (esperado 0x00000000)", PC);
     $display("=== Fim ===");
     $finish;
->>>>>>> feat/complete-mips-implementation
+
 end
 
 always #5 clock = ~clock;
 
-<<<<<<< HEAD
 endmodule
-=======
-endmodule
->>>>>>> feat/complete-mips-implementation
