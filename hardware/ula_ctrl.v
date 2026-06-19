@@ -1,5 +1,5 @@
 // ============================================================
-// Grupo: --
+// Grupo: Marcos José e Josué Costa
 // Atividade: Projeto 02 - 2VA
 // Disciplina: Arquitetura e Organização de Computadores
 // Semestre: 2025.2
