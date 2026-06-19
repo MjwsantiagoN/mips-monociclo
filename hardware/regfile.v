@@ -1,3 +1,14 @@
+// ============================================================
+// Grupo: Marcos José e Josué Costa
+// Atividade: Projeto 02 - 2VA
+// Disciplina: Arquitetura e Organização de Computadores
+// Semestre: 2025.2
+// Arquivo: regfile.v
+// Descrição: Banco de registradores do MIPS monociclo. Implementa 32 registradores de 32 bits.
+//			  Permite duas leituras simultâneas. Uma escrita por ciclo de clock.
+//            O registrador $zero permanece sempre igual a zero.
+// ============================================================
+
 module regfile(
     input clock,
     input regWrite,
