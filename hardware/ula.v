@@ -1,3 +1,20 @@
+// ============================================================
+// Grupo: Marcos José e Josué Costa
+// Atividade: Projeto 02 - 2VA
+// Disciplina: Arquitetura e Organização de Computadores
+// Semestre: 2025.2
+// Arquivo: ula.v
+// Descrição: Unidade Lógica e Aritmética (ULA) do MIPS monociclo.
+//            Responsável por executar operações aritméticas,
+//            lógicas, comparações e deslocamentos.
+//
+// Operações suportadas:
+// ADD, SUB, AND, OR, XOR, NOR, SLT, SLTU, SLL, SRL, SRA, LUI
+//
+// *O zeroFlag é utilizado principalmente pelas instruções
+// de desvio condicional (beq e bne).
+// ============================================================
+
 module ula(
     input [31:0] in1,
     input [31:0] in2,
@@ -26,11 +43,8 @@ case (op)
     4'b1001: result = in2 >> in1[4:0];           // Deslocamento para a direita (srl/srlv)
     4'b1010: result = $signed(in2) >>> in1[4:0]; // Deslocamento p/ direita com sinal (sra/srav)
 
-<<<<<<< HEAD
-=======
     4'b1011: result = {in2[15:0], 16'b0};        // LUI: carrega imediato nos 16 bits superiores
 
->>>>>>> feat/complete-mips-implementation
     default: result = 32'b0;
 endcase
 
