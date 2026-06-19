@@ -1,3 +1,10 @@
+// ============================================================
+// Grupo: Marcos José e Josué Costa
+// Descrição: Módulo de extensão de sinal.
+//            Converte um valor de 16 bits para 32 bits,
+//            preservando o bit de sinal.
+// ============================================================
+
 module signExtend (
 
     input  [15:0] in,
