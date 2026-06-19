@@ -1,3 +1,19 @@
+// ============================================================
+// Grupo: Marcos José e Josué Costa
+// Atividade: Projeto 02 - 2VA
+// Disciplina: Arquitetura e Organização de Computadores
+// Semestre: 2025.2
+// Arquivo: tb_regfile.v
+// Descrição: Testbench do banco de registradores (regfile).
+//            Verifica as operações de leitura simultânea,
+//            escrita síncrona, reset e a preservação do
+//            registrador $zero.
+//
+//  Compilação:
+//    cd hardware/
+//    iverilog -g2012 -o sim *.v ../tests/tb_regfile.v && vvp sim
+// ============================================================
+
 module tb_regfile;
 
     reg clock;
@@ -90,11 +106,7 @@ module tb_regfile;
 
         #10;
 
-<<<<<<< HEAD
-        $stop;
-=======
         $finish;
->>>>>>> feat/complete-mips-implementation
 
     end
 
