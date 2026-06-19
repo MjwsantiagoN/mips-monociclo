@@ -99,7 +99,11 @@ module tb_ula;
 
         #10;
 
+<<<<<<< HEAD
         $stop;
+=======
+        $finish;
+>>>>>>> feat/complete-mips-implementation
 
     end
 

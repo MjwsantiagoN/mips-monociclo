@@ -1,0 +1,24 @@
+# Quartus - arquivos gerados automaticamente
+db/
+incremental_db/
+output_files/
+simulation/
+
+# Arquivos temporários do Quartus
+*.rpt
+*.summary
+*.smsg
+*.pin
+*.sof
+*.pof
+*.jdi
+*.sld
+*.done
+*.vvp
+*.wlf
+*.xrf
+*.sft
+*.vo
+c5_pin_model_dump.txt
+mips_nativelink_simulation.rpt
+sim.vvp

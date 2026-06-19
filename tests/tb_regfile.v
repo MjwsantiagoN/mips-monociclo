@@ -90,7 +90,11 @@ module tb_regfile;
 
         #10;
 
+<<<<<<< HEAD
         $stop;
+=======
+        $finish;
+>>>>>>> feat/complete-mips-implementation
 
     end
 
