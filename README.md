@@ -4,6 +4,21 @@
 **Semestre:** 2025.2  
 **Professor:** Vítor A. Coutinho – UFRPE
 
+## Objetivo
+
+Este projeto consiste na implementação de um processador MIPS monociclo de 32 bits em Verilog, desenvolvido como parte da disciplina de Arquitetura e Organização de Computadores.
+
+A arquitetura segue o modelo monociclo clássico, no qual cada instrução é executada integralmente em um único ciclo de clock, percorrendo as etapas de busca, decodificação, execução, acesso à memória e escrita de volta (write-back).
+
+O projeto foi desenvolvido de forma modular, permitindo testar individualmente cada componente e validar a integração completa do processador.
+
+## Ferramentas Utilizadas
+- Verilog HDL
+- Quartus Prime
+- ModelSim
+- Icarus Verilog
+- Git/GitHub
+
 ## Estrutura do projeto
 
 ```
@@ -43,6 +58,28 @@ mips-monociclo/
 **Tipo R:** add, sub, and, or, xor, nor, slt, sltu, sll, srl, sra, sllv, srlv, srav, jr  
 **Tipo I:** addi, addiu, andi, ori, xori, slti, sltiu, lui, lw, sw, beq, bne  
 **Tipo J:** j, jal
+
+## Fluxo de Execução
+
+Cada instrução percorre as seguintes etapas:
+
+**Busca (Instruction Fetch)**
+- O PC fornece o endereço atual.
+- A memória de instruções retorna a instrução correspondente.
+
+**Decodificação (Instruction Decode)**
+- Os campos da instrução são separados.
+- A unidade de controle gera os sinais necessários.
+  
+**Execução (Execute)**
+- A ULA realiza a operação correspondente.
+  
+**Acesso à memória (Memory Access)**
+- lw realiza leitura.
+- sw realiza escrita.
+  
+**Escrita de volta (Write Back)**
+- O resultado é armazenado no banco de registradores.
 
 ## Como simular (Icarus Verilog)
 
