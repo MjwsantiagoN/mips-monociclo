@@ -71,7 +71,7 @@ iverilog -g2012 -o sim d_mem.v ../tests/tb_dmem.v && vvp sim
 
 O arquivo `instruction.list` contém um programa que exercita as
 principais instruções. Cada linha é uma instrução de 32 bits em binário.
-Para executar um programa próprio, substitua o conteúdo do arquivo
+Para executar um programa próprio, basta substituir o conteúdo do arquivo
 mantendo o formato: uma instrução por linha, 32 dígitos binários.
 
 ## Codificação da ULA (op[3:0])
@@ -90,4 +90,3 @@ mantendo o formato: uma instrução por linha, 32 dígitos binários.
 | 1001   | SRL / SRLV |
 | 1010   | SRA / SRAV |
 | 1011   | LUI      |
->>>>>>> feat/complete-mips-implementation
